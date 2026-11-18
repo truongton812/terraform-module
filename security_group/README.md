@@ -14,7 +14,7 @@ Terraform module that creates one or more security groups in a VPC, together wit
 
 ```hcl
 module "security_groups" {
-  source  = "<namespace>/security-group/aws"
+  source  = "truongton812/terraform-module/security_group
   version = "~> 1.0"
 
   project_name = "myapp"

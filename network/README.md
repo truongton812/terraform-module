@@ -18,7 +18,7 @@ Subnet CIDRs can be generated automatically from the VPC CIDR or passed in expli
 
 ```hcl
 module "network" {
-  source  = "<namespace>/network/aws"
+  source  = "truongton812/terraform-module/network"
   version = "~> 1.0"
 
   project_name = "myapp"
@@ -36,7 +36,7 @@ This creates a VPC with one public and one private subnet per AZ (CIDRs generate
 
 ```hcl
 module "network" {
-  source  = "<namespace>/network/aws"
+  source  = "truongton812/terraform-module/network"
   version = "~> 1.0"
 
   project_name = "myapp"
@@ -60,7 +60,7 @@ module "network" {
 
 ```hcl
 module "network" {
-  source  = "<namespace>/network/aws"
+  source  = "truongton812/terraform-module/network"
   version = "~> 1.0"
 
   project_name = "myapp"
@@ -84,7 +84,7 @@ module "network" {
 
 ```hcl
 module "network" {
-  source  = "<namespace>/network/aws"
+  source  = "truongton812/terraform-module/network"
   version = "~> 1.0"
 
   project_name = "myapp"
