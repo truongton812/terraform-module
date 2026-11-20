@@ -31,7 +31,7 @@ Creates an IAM role for an AWS service (ECS task, Lambda, EC2, ...) and grants i
 
 ```hcl
 module "ecs_task_role" {
-  source = "../iam_role_test"
+  source = "truongton812/terraform-module/ecs_service/iam_role"
 
   project_name     = "cg-utils"
   environment      = "dev"
@@ -44,7 +44,7 @@ module "ecs_task_role" {
 
 ```hcl
 module "ecs_task_role" {
-  source = "../iam_role_test"
+  source = "truongton812/terraform-module/ecs_service/iam_role"
 
   project_name         = "cg-utils"
   environment          = "dev"
