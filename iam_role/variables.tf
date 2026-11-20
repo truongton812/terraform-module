@@ -53,7 +53,7 @@ variable "max_session_duration" {
 
 variable "inline_policies" {
   description = "Map of inline policies embedded in the role. Key = inline policy name, value = policy document as a JSON string."
-  type        = map(string)
+  type        = map(object)
   default     = {}
 
   validation {
@@ -77,7 +77,7 @@ variable "managed_policy_arns" {
 
 variable "custom_policies" {
   description = "Map of customer managed policies to create and attach. Key = policy name suffix (full name: <project>-<env>-<key>), value = policy document as a JSON string."
-  type        = map(string)
+  type        = map(object)
   default     = {}
 
   validation {
